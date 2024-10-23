@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Linguagens de Programação</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Meu Site de Programação</h2>
+        <div class="navbar-toggler" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="inicio.html">Início</a>
+        <a href="frontend.html">Frontend</a>
+        <a href="backend.html">Backend</a>
+        <a href="historia.html">História da Programação</a>
+    </div>
+
+    <div class="container">
+        <h1>Linguagens de Programação</h1>
+        <p>Existem muitas linguagens de programação, cada uma com suas características e usos. Algumas das mais populares incluem:</p>
+        <ul>
+            <li><strong>Python:</strong> Ideal para ciência de dados e desenvolvimento web.</li>
+            <li><strong>JavaScript:</strong> Essencial para desenvolvimento web.</li>
+            <li><strong>Java:</strong> Usada em grandes sistemas corporativos.</li>
+            <li><strong>C#:</strong> Popular no desenvolvimento para Windows e jogos.</li>
+        </ul>
+        <p>Escolha uma linguagem que se alinhe aos seus interesses e comece a praticar!</p>
+        <a href="historia.html" class="btn">Saber Mais</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

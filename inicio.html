@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Meu Site de Programação</h2>
+        <div class="navbar-toggler" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="frontend.html">Frontend</a>
+        <a href="backend.html">Backend</a>
+        <a href="linguagens.html">Linguagens</a>
+        <a href="historia.html">História da Programação</a>
+    </div>
+
+    <div class="container">
+        <h1>Bem-vindo!</h1>
+        <p>Este material foi criado para ajudar você a evoluir no mundo da programação. Aqui você encontrará informações sobre:</p>
+        <ul>
+            <li>As principais linguagens de programação</li>
+            <li>Frameworks para desenvolvimento frontend e backend</li>
+            <li>Dicas e recursos para aprimorar suas habilidades</li>
+        </ul>
+        <p>Estamos aqui para guiá-lo nessa jornada! Explore as páginas e comece a aprender.</p>
+        <a href="frontend.html" class="btn">Começar a Aprender</a>
+        
+        <h2>Teste seus conhecimentos!</h2>
+        <button onclick="startQuiz()" class="btn">Iniciar Quiz de Programação</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function startQuiz() {
+            let score = 0;
+            const totalQuestions = 3;
+
+            const question1 = prompt("1. A linguagem utilizada para estruturar páginas web é:\n\nA) Java\nB) HTML\nC) CSS\nD) Python\n\nDigite sua resposta (A, B, C ou D):");
+            if (question1?.toUpperCase() === 'B') score++;
+
+            const question2 = prompt("2. Qual desses é um framework JavaScript popular?\n\nA) Django\nB) Spring\nC) React\nD) Ruby on Rails\n\nDigite sua resposta (A, B, C ou D):");
+            if (question2?.toUpperCase() === 'C') score++;
+
+            const question3 = prompt("3. O que é CSS?\n\nA) Uma linguagem de programação\nB) Uma linguagem de estilo\nC) Uma base de dados\nD) Um sistema operacional\n\nDigite sua resposta (A, B, C ou D):");
+            if (question3?.toUpperCase() === 'B') score++;
+
+            alert(`Você respondeu corretamente ${score} de ${totalQuestions} perguntas!`);
+        }
+    </script>
+</body>
+</html>

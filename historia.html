@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>História da Programação</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Meu Site de Programação</h2>
+        <div class="navbar-toggler" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="inicio.html">Início</a>
+        <a href="frontend.html">Frontend</a>
+        <a href="backend.html">Backend</a>
+        <a href="linguagens.html">Linguagens</a>
+    </div>
+
+    <div class="container">
+        <h1>História da Programação</h1>
+        <p>A programação começou na década de 1950, com linguagens como Fortran e COBOL. Desde então, muitas outras linguagens foram desenvolvidas.</p>
+        <h2>Linguagens Notáveis</h2>
+        <ul>
+            <li><strong>Fortran:</strong> Usada principalmente em ciência e engenharia.</li>
+            <li><strong>COBOL:</strong> Focada em aplicações comerciais.</li>
+            <li><strong>C:</strong> Linguagem de programação de propósito geral, fundamental para muitas outras linguagens.</li>
+        </ul>
+        <h2>Recursos Adicionais</h2>
+        <p>Para saber mais, confira os links abaixo:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

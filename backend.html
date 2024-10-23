@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Backend</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Meu Site de Programação</h2>
+        <div class="navbar-toggler" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="inicio.html">Início</a>
+        <a href="frontend.html">Frontend</a>
+        <a href="linguagens.html">Linguagens</a>
+        <a href="historia.html">História da Programação</a>
+    </div>
+
+    <div class="container">
+        <h1>Desenvolvimento Backend</h1>
+        <p>O desenvolvimento backend é a parte do site que lida com o servidor e o banco de dados. Algumas das linguagens e frameworks mais utilizados incluem:</p>
+        <ul>
+            <li><strong>JavaScript (Node.js):</strong> Usado para criar servidores rápidos.</li>
+            <li><strong>Python:</strong> Popular para aplicações web com Django e Flask.</li>
+            <li><strong>Java:</strong> Usado em grandes aplicações corporativas com Spring.</li>
+        </ul>
+        <p>Aprender sobre APIs e comunicação entre o frontend e o backend é essencial para se tornar um desenvolvedor completo.</p>
+        <a href="linguagens.html" class="btn">Saber Mais</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

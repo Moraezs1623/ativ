@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Meu Site de Programação</h2>
+        <div class="navbar-toggler" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="inicio.html">Início</a>
+        <a href="backend.html">Backend</a>
+        <a href="linguagens.html">Linguagens</a>
+        <a href="historia.html">História da Programação</a>
+    </div>
+
+    <div class="container">
+        <h1>Desenvolvimento Frontend</h1>
+        <p>O desenvolvimento frontend refere-se à parte do site que os usuários interagem diretamente. Aqui estão algumas das linguagens e ferramentas mais utilizadas:</p>
+        <ul>
+            <li><strong>HTML:</strong> A estrutura básica das páginas web.</li>
+            <li><strong>CSS:</strong> Usado para estilizar e dar layout às páginas.</li>
+            <li><strong>JavaScript:</strong> Adiciona interatividade às páginas web.</li>
+        </ul>
+        <p>Os frameworks mais populares incluem:</p>
+        <ul>
+            <li><strong>React:</strong> Biblioteca para construir interfaces de usuário.</li>
+            <li><strong>Vue.js:</strong> Framework progressivo e fácil de integrar.</li>
+            <li><strong>Angular:</strong> Um framework robusto para aplicações complexas.</li>
+        </ul>
+        <a href="linguagens.html" class="btn">Saber Mais</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
